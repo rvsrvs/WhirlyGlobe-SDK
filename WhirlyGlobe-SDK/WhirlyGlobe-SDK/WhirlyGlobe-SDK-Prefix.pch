@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WhirlyGlobe-SDK' target in the 'WhirlyGlobe-SDK' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
