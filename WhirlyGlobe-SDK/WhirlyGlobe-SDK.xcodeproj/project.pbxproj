@@ -11,13 +11,10 @@
 		FB5DEF9F16D6B95C00EBEA2F /* WhirlyGlobeSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB5DEF9E16D6B95C00EBEA2F /* WhirlyGlobeSDK.h */; };
 		FB5DEFA116D6B95C00EBEA2F /* WhirlyGlobeSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5DEFA016D6B95C00EBEA2F /* WhirlyGlobeSDK.m */; };
 		FB5DEFA916D6B95C00EBEA2F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5DEFA816D6B95C00EBEA2F /* SenTestingKit.framework */; };
-		FB5DEFAB16D6B95C00EBEA2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5DEFAA16D6B95C00EBEA2F /* UIKit.framework */; };
 		FB5DEFAC16D6B95C00EBEA2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5DEF9916D6B95C00EBEA2F /* Foundation.framework */; };
 		FB5DEFAF16D6B95C00EBEA2F /* libWhirlyGlobe-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5DEF9616D6B95C00EBEA2F /* libWhirlyGlobe-SDK.a */; };
 		FB5DEFB516D6B95C00EBEA2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB5DEFB316D6B95C00EBEA2F /* InfoPlist.strings */; };
 		FB5DEFB816D6B95C00EBEA2F /* WhirlyGlobe-SDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5DEFB716D6B95C00EBEA2F /* WhirlyGlobe-SDKTests.m */; };
-		FB5DEFC416D6BADA00EBEA2F /* libWhirlyGlobe-MaplyComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5DEFC316D6BADA00EBEA2F /* libWhirlyGlobe-MaplyComponent.a */; };
-		FB5DEFC616D6BADF00EBEA2F /* libWhirlyGlobeLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5DEFC516D6BADF00EBEA2F /* libWhirlyGlobeLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +50,10 @@
 		FB5DEFA016D6B95C00EBEA2F /* WhirlyGlobeSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhirlyGlobeSDK.m; sourceTree = "<group>"; };
 		FB5DEFA716D6B95C00EBEA2F /* WhirlyGlobe-SDKTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WhirlyGlobe-SDKTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5DEFA816D6B95C00EBEA2F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FB5DEFAA16D6B95C00EBEA2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FB5DEFB216D6B95C00EBEA2F /* WhirlyGlobe-SDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhirlyGlobe-SDKTests-Info.plist"; sourceTree = "<group>"; };
 		FB5DEFB416D6B95C00EBEA2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB5DEFB616D6B95C00EBEA2F /* WhirlyGlobe-SDKTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhirlyGlobe-SDKTests.h"; sourceTree = "<group>"; };
 		FB5DEFB716D6B95C00EBEA2F /* WhirlyGlobe-SDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WhirlyGlobe-SDKTests.m"; sourceTree = "<group>"; };
-		FB5DEFC316D6BADA00EBEA2F /* libWhirlyGlobe-MaplyComponent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWhirlyGlobe-MaplyComponent.a"; path = "../../../Library/Developer/Xcode/DerivedData/WhirlyGlobe-bmzdpobwkpvjomazaxoyqeinvosq/Build/Products/Debug-iphoneos/libWhirlyGlobe-MaplyComponent.a"; sourceTree = "<group>"; };
-		FB5DEFC516D6BADF00EBEA2F /* libWhirlyGlobeLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWhirlyGlobeLib.a; path = "../../../Library/Developer/Xcode/DerivedData/WhirlyGlobe-bmzdpobwkpvjomazaxoyqeinvosq/Build/Products/Debug-iphoneos/libWhirlyGlobeLib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5DEFC416D6BADA00EBEA2F /* libWhirlyGlobe-MaplyComponent.a in Frameworks */,
-				FB5DEFC616D6BADF00EBEA2F /* libWhirlyGlobeLib.a in Frameworks */,
 				DDA92865D5AE4B5A9C7A5074 /* libPods-WhirlyGlobe-SDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5DEFA916D6B95C00EBEA2F /* SenTestingKit.framework in Frameworks */,
-				FB5DEFAB16D6B95C00EBEA2F /* UIKit.framework in Frameworks */,
 				FB5DEFAC16D6B95C00EBEA2F /* Foundation.framework in Frameworks */,
 				FB5DEFAF16D6B95C00EBEA2F /* libWhirlyGlobe-SDK.a in Frameworks */,
 			);
@@ -110,11 +101,8 @@
 		FB5DEF9816D6B95C00EBEA2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB5DEFC516D6BADF00EBEA2F /* libWhirlyGlobeLib.a */,
-				FB5DEFC316D6BADA00EBEA2F /* libWhirlyGlobe-MaplyComponent.a */,
 				FB5DEF9916D6B95C00EBEA2F /* Foundation.framework */,
 				FB5DEFA816D6B95C00EBEA2F /* SenTestingKit.framework */,
-				FB5DEFAA16D6B95C00EBEA2F /* UIKit.framework */,
 				AD9CA3644FE54F46BD6B35C4 /* libPods-WhirlyGlobe-SDK.a */,
 			);
 			name = Frameworks;
@@ -275,7 +263,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh ";
-			shellScript = "LOCALTMPDIR=\"${SOURCE_ROOT}/tmp\"\nSDKROOT=\"${SOURCE_ROOT}/SDKRoot\"\nDEVLIB=\"${LOCALTMPDIR}/libWhirlyGlobe-SDK-iphoneos.a\"\nSIMLIB=\"${LOCALTMPDIR}/libWhirlyGlobe-SDK-iphonesimulator.a\"\necho \"WORKING DIR     =\" `pwd`\necho \"BUILD_ROOT      =\" $BUILD_ROOT\necho \"PLATFORM_NAME   =\" $PLATFORM_NAME\necho \"CONFIGURATION   =\" $CONFIGURATION\necho \"SDKROOT         =\" ${SDKROOT}\necho \"LOCALTMPDIR     =\" ${LOCALTMPDIR}\necho \"DEVLIB          =\" ${DEVLIB}\necho \"SIMLIB          =\" ${SIMLIB}\necho \"Header Source   =\" ${SOURCE_ROOT}/../Pods/WhirlyGlobe-Headers/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\necho \"Lib Source      =\" ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a\necho \"Destination Dir =\" ${SOURCE_ROOT}/SDKRoot\n\nmkdir -p ${SDKROOT}\nmkdir -p ${TMPDIR}\n\n#fetch the header files\nfind ${SDKROOT} -name \"*.h\" -exec rm -rf {} \\;\npushd ${SOURCE_ROOT}/../Pods/WhirlyGlobe-Headers/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\ncp -pr . ${SOURCE_ROOT}/SDKRoot\npopd\n# clean out the ones we don't want\nrm -rf ${SDKROOT}/private\nrm -rf ${SDKROOT}/include\n\n#copy the lib we just built\ncp ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\n\n#strip that lib\nstrip -S -A -r -u -x ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\n\n#if we have both libs make the sdk lib\nif [ -f $DEVLIB ] && [ -f $SIMLIB ]; then\necho \"Creating merged library file\"\nlipo -create -output ${SOURCE_ROOT}/SDKRoot/libWhirlyGlobe-SDK.a ${DEVLIB} ${SIMLIB}\nelse\necho \"Missing one of the libs to lipo\"\nfi\n";
+			shellScript = "LOCALTMPDIR=\"${SOURCE_ROOT}/tmp\"\nLOCALSDKROOT=\"${SOURCE_ROOT}/SDKRoot\"\nDEVLIB=\"${LOCALTMPDIR}/libWhirlyGlobe-SDK-iphoneos.a\"\nSIMLIB=\"${LOCALTMPDIR}/libWhirlyGlobe-SDK-iphonesimulator.a\"\necho \"WORKING DIR     =\" `pwd`\necho \"BUILD_ROOT      =\" $BUILD_ROOT\necho \"PLATFORM_NAME   =\" $PLATFORM_NAME\necho \"CONFIGURATION   =\" $CONFIGURATION\necho \"LOCALSDKROOT    =\" ${LOCALSDKROOT}\necho \"LOCALTMPDIR     =\" ${LOCALTMPDIR}\necho \"DEVLIB          =\" ${DEVLIB}\necho \"SIMLIB          =\" ${SIMLIB}\necho \"Header Source   =\" ${SOURCE_ROOT}/../Pods/WhirlyGlobe-Headers/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\necho \"Lib Source      =\" ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a\necho \"Destination Dir =\" ${LOCALSDKROOT}\n\nmkdir -p ${LOCALSDKROOT}\nmkdir -p ${TMPDIR}\n\n#fetch the header files\necho \"copying headers\"\nfind ${LOCALSDKROOT} -name \"*.h\" -exec rm {} \\;\npushd ${SOURCE_ROOT}/../Pods/WhirlyGlobe-Headers/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\ncp -pr . ${LOCALSDKROOT}\npopd\n\n#copy the lib we just built\necho \"Copying built lib\"\ncp ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\n\n#strip that lib\necho \"stripping build lib\"\nstrip -S -A -r -u -x ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\n\n#if we have both libs make the sdk lib\nif [ -f $DEVLIB ] && [ -f $SIMLIB ]; then\necho \"Creating merged library file\"\nlipo -create -output ${LOCALSDKROOT}/libWhirlyGlobe-SDK.a ${DEVLIB} ${SIMLIB}\nelse\necho \"Missing one of the libs to lipo\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -386,7 +374,7 @@
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/WhirlyGlobe-bmzdpobwkpvjomazaxoyqeinvosq/Build/Products/Debug-iphoneos\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -408,7 +396,7 @@
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/WhirlyGlobe-bmzdpobwkpvjomazaxoyqeinvosq/Build/Products/Debug-iphoneos\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
