@@ -192,7 +192,8 @@
 		FB5DEF8E16D6B95C00EBEA2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ronald V. Simmons";
 			};
 			buildConfigurationList = FB5DEF9116D6B95C00EBEA2F /* Build configuration list for PBXProject "WhirlyGlobe-SDK" */;
@@ -263,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh ";
-			shellScript = "LOCALTMPDIR=\"${SOURCE_ROOT}/tmp\"\nLOCALSDKROOT=\"${SOURCE_ROOT}/SDKRoot\"\nDEVLIB=\"${LOCALTMPDIR}/libWhirlyGlobe-SDK-iphoneos.a\"\nSIMLIB=\"${LOCALTMPDIR}/libWhirlyGlobe-SDK-iphonesimulator.a\"\necho \"WORKING DIR     =\" `pwd`\necho \"BUILD_ROOT      =\" $BUILD_ROOT\necho \"PLATFORM_NAME   =\" $PLATFORM_NAME\necho \"CONFIGURATION   =\" $CONFIGURATION\necho \"LOCALSDKROOT    =\" ${LOCALSDKROOT}\necho \"LOCALTMPDIR     =\" ${LOCALTMPDIR}\necho \"DEVLIB          =\" ${DEVLIB}\necho \"SIMLIB          =\" ${SIMLIB}\necho \"Header Source   =\" ${SOURCE_ROOT}/../Pods/WhirlyGlobe-Headers/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\necho \"Lib Source      =\" ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a\necho \"Destination Dir =\" ${LOCALSDKROOT}\n\nmkdir -p ${LOCALSDKROOT}\nmkdir -p ${TMPDIR}\n\n#fetch the header files\necho \"copying headers\"\nfind ${LOCALSDKROOT} -name \"*.h\" -exec rm {} \\;\npushd ${SOURCE_ROOT}/../Pods/WhirlyGlobe-Headers/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\ncp -pr . ${LOCALSDKROOT}\npopd\n\n#copy the lib we just built\necho \"Copying built lib\"\ncp ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\n\n#strip that lib\necho \"stripping build lib\"\nstrip -S -A -r -u -x ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\n\n#if we have both libs make the sdk lib\nif [ -f $DEVLIB ] && [ -f $SIMLIB ]; then\necho \"Creating merged library file\"\nlipo -create -output ${LOCALSDKROOT}/libWhirlyGlobe-SDK.a ${DEVLIB} ${SIMLIB}\nelse\necho \"Missing one of the libs to lipo\"\nfi\n";
+			shellScript = "LOCALTMPDIR=\"${SOURCE_ROOT}/tmp\"\nLOCALSDKROOT=\"${SOURCE_ROOT}/SDKRoot\"\nDEVLIB=\"${LOCALTMPDIR}/libWhirlyGlobe-SDK-iphoneos.a\"\nSIMLIB=\"${LOCALTMPDIR}/libWhirlyGlobe-SDK-iphonesimulator.a\"\necho \"WORKING DIR     =\" `pwd`\necho \"BUILD_ROOT      =\" $BUILD_ROOT\necho \"PLATFORM_NAME   =\" $PLATFORM_NAME\necho \"CONFIGURATION   =\" $CONFIGURATION\necho \"LOCALSDKROOT    =\" ${LOCALSDKROOT}\necho \"LOCALTMPDIR     =\" ${LOCALTMPDIR}\necho \"DEVLIB          =\" ${DEVLIB}\necho \"SIMLIB          =\" ${SIMLIB}\necho \"Header Source   =\" ${SOURCE_ROOT}/../Pods/WhirlyGlobe-Headers/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\necho \"Lib Source      =\" ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a\necho \"Destination Dir =\" ${LOCALSDKROOT}\n\nmkdir -p ${LOCALSDKROOT}\nmkdir -p ${TMPDIR}\n\n#fetch the header files\necho \"copying headers\"\nfind ${LOCALSDKROOT} -name \"*.h\" -exec rm {} \\;\npushd ${SOURCE_ROOT}/../Pods/WhirlyGlobe-Headers/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\ncp -pr . ${LOCALSDKROOT}\npopd\n\n#copy the lib we just built\necho \"Copying built lib\"\necho cp ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\ncp ${BUILD_ROOT}/${CONFIGURATION}-${PLATFORM_NAME}/lib${PRODUCT_NAME}.a ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\n\n#strip that lib\necho \"stripping build lib\"\nstrip -S -A -r -u -x ${LOCALTMPDIR}/lib${PRODUCT_NAME}-${PLATFORM_NAME}.a\n\n#if we have both libs make the sdk lib\nif [ -f $DEVLIB ] && [ -f $SIMLIB ]; then\necho \"Creating merged library file\"\nlipo -create -output ${LOCALSDKROOT}/libWhirlyGlobe-SDK.a ${DEVLIB} ${SIMLIB}\nelse\necho \"Missing one of the libs to lipo\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -331,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
@@ -369,6 +370,19 @@
 				DSTROOT = "/tmp/WhirlyGlobe-SDK.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhirlyGlobe-SDK/WhirlyGlobe-SDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/WhirlyGlobe\"",
+					"\"${PODS_ROOT}/Headers/WhirlyGlobe-Headers\"",
+					"\"${PODS_ROOT}/Headers/boost\"",
+					"\"${PODS_ROOT}/Headers/clipper\"",
+					"\"${PODS_ROOT}/Headers/eigen\"",
+					"\"${PODS_ROOT}/Headers/proj4\"",
+					"\"${PODS_ROOT}/Headers/shapelib\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/clipper/\"",
+					"\"${PODS_ROOT}/eigen\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/WhirlyGlobe-bmzdpobwkpvjomazaxoyqeinvosq/Build/Products/Debug-iphoneos\"",
@@ -380,7 +394,7 @@
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -391,6 +405,19 @@
 				DSTROOT = "/tmp/WhirlyGlobe-SDK.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhirlyGlobe-SDK/WhirlyGlobe-SDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/WhirlyGlobe\"",
+					"\"${PODS_ROOT}/Headers/WhirlyGlobe-Headers\"",
+					"\"${PODS_ROOT}/Headers/boost\"",
+					"\"${PODS_ROOT}/Headers/clipper\"",
+					"\"${PODS_ROOT}/Headers/eigen\"",
+					"\"${PODS_ROOT}/Headers/proj4\"",
+					"\"${PODS_ROOT}/Headers/shapelib\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/clipper/\"",
+					"\"${PODS_ROOT}/eigen\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/WhirlyGlobe-bmzdpobwkpvjomazaxoyqeinvosq/Build/Products/Debug-iphoneos\"",
@@ -402,7 +429,7 @@
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};

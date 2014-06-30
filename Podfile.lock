@@ -1,47 +1,40 @@
-
 PODS:
-- WhirlyGlobe (2.0.ao):
-  - WhirlyGlobe/Component (= 2.0.ao)
-- WhirlyGlobe-Headers (2.0.ao):
-  - boost/math-includes
-  - boost/pointer_cast-includes
-  - boost/shared_ptr-includes
-  - eigen
-- WhirlyGlobe/Component (2.0.ao):
-  - WhirlyGlobe/Lib (= 2.0.ao)
-- WhirlyGlobe/Lib (2.0.ao):
-  - WhirlyGlobe-Headers (= 2.0.ao)
-  - clipper
-  - proj4
-  - shapelib
-- boost/math-includes (1.51.0)
-- boost/numeric-includes (1.51.0)
-- boost/pointer_cast-includes (1.51.0)
-- boost/preprocessor-includes (1.51.0)
-- boost/shared_ptr-includes (1.51.0)
-- clipper (5.0.2)
-- eigen (3.1.2):
-  - boost/numeric-includes
-  - boost/preprocessor-includes
-- proj4 (4.8.0)
-- shapelib (1.3)
+  - boost/math-includes (1.51.0)
+  - boost/numeric-includes (1.51.0)
+  - boost/pointer_cast-includes (1.51.0)
+  - boost/preprocessor-includes (1.51.0)
+  - boost/shared_ptr-includes (1.51.0)
+  - clipper (5.1.4)
+  - eigen (3.2.0):
+    - boost/numeric-includes
+    - boost/preprocessor-includes
+  - proj4 (4.8.0)
+  - shapelib (1.3)
+  - WhirlyGlobe (2.0.ao):
+    - WhirlyGlobe/Component
+  - WhirlyGlobe-Headers (2.0.ao):
+    - boost/math-includes
+    - boost/pointer_cast-includes
+    - boost/shared_ptr-includes
+    - eigen
+  - WhirlyGlobe/Component (2.0.ao):
+    - WhirlyGlobe/Lib (= 2.0.ao)
+  - WhirlyGlobe/Lib (2.0.ao):
+    - clipper
+    - proj4
+    - shapelib
+    - WhirlyGlobe-Headers (= 2.0.ao)
 
 DEPENDENCIES:
-- WhirlyGlobe (= 2.0.ao)
+  - WhirlyGlobe (= 2.0.ao)
 
 SPEC CHECKSUMS:
-  WhirlyGlobe: dc65cad0a5e8bec2bfa45d5fe423bbdf2381ea96
-  WhirlyGlobe-Headers: 40a4a471bc770d0d8ea0600d26c3c87bfb2b174f
-  WhirlyGlobe/Component: dc65cad0a5e8bec2bfa45d5fe423bbdf2381ea96
-  WhirlyGlobe/Lib: dc65cad0a5e8bec2bfa45d5fe423bbdf2381ea96
-  boost/math-includes: c6dea1a70a377872a8d20f3fa08db6ee68cf9821
-  boost/numeric-includes: c6dea1a70a377872a8d20f3fa08db6ee68cf9821
-  boost/pointer_cast-includes: c6dea1a70a377872a8d20f3fa08db6ee68cf9821
-  boost/preprocessor-includes: c6dea1a70a377872a8d20f3fa08db6ee68cf9821
-  boost/shared_ptr-includes: c6dea1a70a377872a8d20f3fa08db6ee68cf9821
-  clipper: c881e615785aea5d226880d2d74a48ab66cea835
-  eigen: c03bcb492a00cf9474caa374bb3afd91bac6a53c
-  proj4: 31e895761075ff97252528a8ae2d531763ea3e57
-  shapelib: c80fbc2cb0b277d4dff129ebb8a806e4164a7b96
+  boost: 581038adda16d11045576013ad27e3eeeabc2d10
+  clipper: 5789558d6995c4fca416b43dba6558ef86ff1181
+  eigen: 35fe8eb8f0e7ef950ad49ea18852af7b8c67aeaa
+  proj4: 9eaa37997f1b4f6037f6dedabd1657f27a4d41ed
+  shapelib: 622b987882111dd347fd30062319e896e8e74bed
+  WhirlyGlobe: dc0a6c5e35bcd55066a9fb5765adcc5958929f2f
+  WhirlyGlobe-Headers: b63afe5beb2d190adb2962c351ff107a087a993d
 
-COCOAPODS: 0.16.3
+COCOAPODS: 0.33.1

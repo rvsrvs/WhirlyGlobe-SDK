@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6648F717-E79E-4602-BEC4-6063E82981A3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WhirlyGlobe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D105F760-3CEC-4A51-A94B-9C648F7D2FE6</key>
+		<string>ssh://github.com/Spatios/WhirlyGlobe-SDK.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WhirlyGlobe.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D105F760-3CEC-4A51-A94B-9C648F7D2FE6</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/Spatios/WhirlyGlobe-SDK.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D105F760-3CEC-4A51-A94B-9C648F7D2FE6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D105F760-3CEC-4A51-A94B-9C648F7D2FE6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WhirlyGlobe-SDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>
