@@ -2,3 +2,5 @@
 /WhirlyGlobe-SDK/tmp/
 /WhirlyGlobe-SDK/SDKRoot/private/
 /.DS_Store
+
+*/xcuserdata/**
